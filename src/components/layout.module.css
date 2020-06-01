@@ -1,0 +1,32 @@
+/* div {
+    background: #96c4ff;
+    opacity: 0.3; 
+    color: navy;
+  } */
+
+  Link {
+    text-shadow: none;
+    background-image: none; 
+    text-decoration: none;
+  }
+  
+  .homeButton {
+    display: inline;
+    margin-left: -15rem; 
+  }
+  
+  .rightLinks {
+    margin-right: -15rem; 
+    list-style: none;
+    float: right;
+  }
+  
+    .line {
+      margin-top: 0px;
+      margin-left: -15rem; 
+      margin-right: -15rem; 
+      font-weight: bolder;
+      color: navy;
+      height: 1px;
+      
+    }

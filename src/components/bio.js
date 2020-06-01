@@ -8,6 +8,9 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
+import ParkGuell from "../../content/assets/IMG_9702.jpeg"
+import styles from './bio.module.css'
+import Container from "./container"
 
 import { rhythm } from "../utils/typography"
 
@@ -28,7 +31,8 @@ const Bio = () => {
             summary
           }
           social {
-            twitter
+            linkedin
+            github
           }
         }
       }
@@ -37,6 +41,7 @@ const Bio = () => {
 
   const { author, social } = data.site.siteMetadata
   return (
+    <Container>
     <div
       style={{
         display: `flex`,
@@ -59,11 +64,15 @@ const Bio = () => {
       <p>
         Written by <strong>{author.name}</strong> {author.summary}
         {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
+        {/* <a href={`https://twitter.com/${social.twitter}`}>
           You should follow him on Twitter
-        </a>
+        </a> */}
       </p>
+      <img className={styles.mainPic} src={ParkGuell}
+         alt={author.name}
+         />
     </div>
+    </Container>
   )
 }
 
