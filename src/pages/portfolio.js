@@ -35,22 +35,20 @@ export default function Portfolio(props) {
             name="BlindDate"
             avatar= {BlindDateHome}
             excerpt="A social/dating application that facilitates relationships without the bias of user photos"
-            link='/BlindDate/'
+            link='/me/BlindDate/'
             app='http://blinddate-js.herokuapp.com/'
             />
             <User
             name="Connect Sindy"
             avatar= {SindyHome}
             excerpt="A cow-themed version of Connect Four"
-            link='/ConnectSindy/'
+            link='/me/ConnectSindy/'
             app='https://connect-sindy-frontend.herokuapp.com/'
             />
             <User
             name="Carded"
             avatar= "https://i.redd.it/5kh9fzj413i01.jpg"
             excerpt="IN PROGRESS: Business card designer application"
-            // link='/connectSindy/'
-            // app='https://connect-sindy-frontend.herokuapp.com/'
             />
             <br></br>
             <p>Check out my <a href='https://github.com/jlindner22' target="_blank" rel="noopener noreferrer">GitHub</a> page to see what else I've been working on!</p>

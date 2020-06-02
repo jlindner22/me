@@ -76,14 +76,14 @@ const Layout = ({ location, title, children }) => {
       }}
     >
    <header style={{ marginBottom: `1.5rem`}}>
-        <Link to="/">
+        <Link to="/me">
           <h3 className={styles.homeButton}>Home</h3>
           {/* <img style={{ marginLeft: `-15rem`, width: `60px`, height: `90px`, borderRadius: `100%`}} src={PG} alt="hi"/> */}
         </Link>
         <ul className={styles.rightLinks}>
-          <ListLink to="/portfolio">Portfolio</ListLink>
-          <ListLink to="/about/">About</ListLink>
-          <ListLink to="/contact/">Contact</ListLink>
+          <ListLink to="/me/portfolio">Portfolio</ListLink>
+          <ListLink to="/me/about/">About</ListLink>
+          <ListLink to="/me/contact/">Contact</ListLink>
         </ul>
       {/* <h2 className={styles.line}>_________________________________________________</h2> */}
       </header>

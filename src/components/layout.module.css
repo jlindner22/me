@@ -16,6 +16,7 @@
   }
   
   .rightLinks {
+    font-weight: bold;
     margin-right: -15rem; 
     list-style: none;
     float: right;

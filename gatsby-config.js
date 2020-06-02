@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/me",
   siteMetadata: {
     title: ``,
     author: {
@@ -6,7 +7,7 @@ module.exports = {
       summary: `jigsaw puzzle solver and aspiring software engineer`
     },
     description: `Jen's Personal Website`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    siteUrl: `https://jlindner22.github.io/me/`,
     social: {
       linkedin: `jen-lindner13/`,
       github: `jlindner22/`
@@ -70,13 +71,28 @@ module.exports = {
         icon: `content/assets/letter-j-icon-png-26.png`
       }
     },
+    `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`
       }
-    }
+    },
+    // {
+    //   resolve: `gatsby-plugin-manifest`,
+    //   options: {
+    //     name: `GatsbyJS`,
+    //     short_name: `GatsbyJS`,
+    //     start_url: `/`,
+    //     background_color: `#6b37bf`,
+    //     theme_color: `#6b37bf`,
+    //     // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
+    //     // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
+    //     display: `standalone`,
+    //     icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+    //   },
+    // },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
