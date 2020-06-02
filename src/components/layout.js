@@ -11,48 +11,61 @@ const ListLink = props => (
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
-  let header
-
-  if (location.pathname === rootPath) {
-    header = (
-      <h1
-        style={{
-          ...scale(1.5),
-          marginBottom: rhythm(1.5),
-          marginTop: 0,
+  let header = (
+    <h1
+      style={{
+        fontFamily: `Montserrat, sans-serif`,
+        ...scale(1.2),
+        // marginBottom: rhythm(1.5),
+        marginTop: 0,
+        padding: 0,
+        boxShadow: `none`,
+        color: `inherit`,
         }}
-      >
-        <Link
-          style={{
-            boxShadow: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
-          {title}
-        </Link>
-      </h1>
-    )
-  } else {
-    header = (
-      <h3
-        style={{
-          fontFamily: `Montserrat, sans-serif`,
-          marginTop: 0,
-        }}
-      >
-        <Link
-          style={{
-            boxShadow: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
-          {title}
-        </Link>
-      </h3>
-    )
-  }
+       >
+         Welcome to Jen's World!
+    </h1>
+  )
+  // if (location.pathname === rootPath) {
+  //   header = (
+  //     <h1
+  //       style={{
+  //         ...scale(1.5),
+  //         marginBottom: rhythm(1.5),
+  //         marginTop: 0,
+  //       }}
+  //     >
+  //       <Link
+  //         style={{
+  //           boxShadow: `none`,
+  //           color: `inherit`,
+  //         }}
+  //         to={`/`}
+  //       >
+  //         {title}
+  //       </Link>
+  //     </h1>
+  //   )
+  // } else {
+  //   header = (
+  //     <h3
+  //       style={{
+  //         fontFamily: `Montserrat, sans-serif`,
+  //         marginTop: 0,
+  //       }}
+  //     >
+  //       <Link
+  //         style={{
+  //           boxShadow: `none`,
+  //           color: `inherit`,
+  //         }}
+  //         to={`/`}
+  //       >
+  //         {title}
+  //       </Link>
+  //     </h3>
+  //   )
+  // }
   return (
     <div
       style={{

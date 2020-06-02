@@ -24,7 +24,7 @@ const User = props => (
 export default function About() {
     return (
         <Layout>
-            <SEO title="Jen Lindner" />
+            <SEO title="Jen Lindner | About" />
             <Container>
                 <h1 style={{ color: `navy` }}>About Me</h1>
                 <br></br>                

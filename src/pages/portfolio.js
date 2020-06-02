@@ -24,7 +24,7 @@ export default function Portfolio(props) {
 
     return (
         <Layout location={props.location} title={props.siteTitle}>
-        <SEO title="Jen Lindner" />
+        <SEO title="Jen Lindner | Portfolio" />
         <Container>
 
         {props.title}
@@ -35,14 +35,14 @@ export default function Portfolio(props) {
             name="BlindDate"
             avatar= {BlindDateHome}
             excerpt="A social/dating application that facilitates relationships without the bias of user photos"
-            link='/blinddate/'
+            link='/BlindDate/'
             app='http://blinddate-js.herokuapp.com/'
             />
             <User
             name="Connect Sindy"
             avatar= {SindyHome}
             excerpt="A cow-themed version of Connect Four"
-            link='/connectSindy/'
+            link='/ConnectSindy/'
             app='https://connect-sindy-frontend.herokuapp.com/'
             />
             <User

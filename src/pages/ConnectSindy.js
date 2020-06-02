@@ -24,7 +24,7 @@ import Home from "../../content/assets/Connect_Sindy_Home.png"
 
     return (
         <Layout location={props.location} title={props.siteTitle}>
-        <SEO title="Jen Lindner" />
+        <SEO title="Jen Lindner | Connect Sindy" />
         <Container>
         <div style={{ color: `navy`}}>
         <Header headerText="Connect Sindy" />

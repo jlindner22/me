@@ -29,13 +29,12 @@ import EditMainPage from "../../content/assets/BlindDate_EditMainPage.png"
 
     return (
         <Layout location={props.location} title={props.siteTitle}>
-        <SEO title="Jen Lindner" />
+        <SEO title="Jen Lindner | BlindDate" />
         <Container>
         <div style={{ color: `navy`}}>
         <Header headerText="BlindDate" />   
         </div>
           <User
-          // name="Home"
           screenshot= {Home}
           excerpt="Home page - choose to log into an existing account or sign up for a new account"
           />

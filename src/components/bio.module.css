@@ -13,6 +13,7 @@ html {
 @keyframes fade {
     from {background-color: #96c4ff}
     to {background-color: rgba(188, 218, 255, 0.151)}
+    /* to {background-color: white} */
 }
   
 .divSpec {

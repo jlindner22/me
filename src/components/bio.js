@@ -11,7 +11,6 @@ import Image from "gatsby-image"
 import ParkGuell from "../../content/assets/IMG_9702.jpeg"
 import styles from './bio.module.css'
 import Container from "./container"
-
 import { rhythm } from "../utils/typography"
 
 const Bio = () => {
@@ -42,13 +41,16 @@ const Bio = () => {
   const { author, social } = data.site.siteMetadata
   return (
     <Container>
-    <div
+    {/* <div
       style={{
         display: `flex`,
         marginBottom: rhythm(2.5),
       }}
-    >
-      <Image
+    > */}
+    <div className={styles.outerDiv}>
+        <div className={styles.divSpec}>
+        <h2 style={{ marginTop: `0px`, fontVariant: `small-caps`}}>Hi, I'm Jen! <span>👋🏻</span></h2>
+      {/* <Image
         fixed={data.avatar.childImageSharp.fixed}
         alt={author.name}
         style={{
@@ -64,13 +66,13 @@ const Bio = () => {
       <p>
         Written by <strong>{author.name}</strong> {author.summary}
         {` `}
-        {/* <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
-        </a> */}
-      </p>
+      </p> */}
       <img className={styles.mainPic} src={ParkGuell}
          alt={author.name}
          />
+      <h2 style={{ marginTop: `0px`, fontVariant: `small-caps`}}><span>🎊</span> Welcome to my personal site <span> 🎉</span></h2>
+      {/* <br></br> */}
+    </div>
     </div>
     </Container>
   )
